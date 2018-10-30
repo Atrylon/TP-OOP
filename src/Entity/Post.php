@@ -6,6 +6,8 @@
  * Time: 15:21
  */
 
+declare(strict_types=1);
+
 namespace App\Entity;
 
 final class Post
