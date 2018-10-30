@@ -13,17 +13,22 @@ namespace App\Entity;
 final class Post
 {
 
-    private $id;
+    private $uid;
     private $title;
     private $message;
     private $createdAt;
 
-    public function __construct(string $id, string $title, string $message, string $createdAt)
+    public function __construct(string $uid, string $title, string $message, string $createdAt)
     {
-        $this->id = $id;
+        $this->uid = $uid;
         $this->title = $title;
         $this->message = $message;
         $this->createdAt = $createdAt;
+    }
+
+    public function title(): ?string
+    {
+        return $this->title;
     }
 
 }

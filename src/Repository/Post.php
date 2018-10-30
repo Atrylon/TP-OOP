@@ -8,8 +8,8 @@ use App\Entity\Post as PostEntity;
 
 interface Post
 {
-    public function find(string $id): PostEntity;
+    public function find(string $uid): PostEntity;
 
-    public function create(string $title, string $message): PostEntity;
+    public function create(string $title, string $message, string $createdAt): PostEntity;
 
 }

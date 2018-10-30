@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+{% block body %}{% endblock %}
+<h1>Articles</h1>
+<ul>
+    <li>{{ posts.title }}</li>
+</ul>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

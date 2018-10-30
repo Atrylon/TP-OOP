@@ -22,9 +22,23 @@ services:
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
-    App\Controller\:
+    App\Action\:
         resource: '../src/Action'
         tags: ['controller.service_arguments']
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Repository\Post:
+        alias: App\Repository\LoggedPost
+
+    Zend\Expressive\Template\TemplateRendererInterface:
+        class: Zend\Expressive\Twig\TwigRenderer
+
+    App\Validator\Validator:
+        alias: App\Validator\ValidatorAggregate
+
+    App\Validator\ValidatorAggregate:
+            class: App\Validator\ValidatorAggregate
+            arguments:
+                $validators:
+                    - '@App\Validator\IsDateTime'
