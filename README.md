@@ -32,3 +32,7 @@ dépendent de l'observable modifié.
 
 ### Temporal Coupling
 Désigne un couplage effectué lorsque deux actions/modifications ont eu lieu au même moment.
+
+
+## Author
+**Berenger Desgardin** - *Initial work* - [Atrylon](https://gihub.com/Atrylon)
