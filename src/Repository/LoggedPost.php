@@ -45,6 +45,15 @@ final class LoggedPost implements Post
         return $this->posts[$uid];
     }
 
+    public function findAll(): array
+    {
+        if (!isset($this->posts)) {
+            throw new \LogicException('Id does not exist');
+        }
+
+        return $this->posts;
+    }
+
     public function create(string $title, string $message, string $createdAt): PostEntity
     {
         return new PostEntity((Uuid::uuid4())->toString(), $title, $message, $createdAt);

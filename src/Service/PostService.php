@@ -34,15 +34,10 @@ final class PostService
         return $post;
     }
 
-//    public function findAll(): PostEntity
-//    {
-//        $posts = [];
-//        $values =
-//        foreach ($values as $value){
-//            $this->validator->validate($value);
-//            array_push($posts,$this->repository->find(l));
-//        }
-//
-//        return $posts;
-//    }
+    public function findAll(): array
+    {
+        $posts = $this->repository->findAll();
+
+        return $posts;
+    }
 }

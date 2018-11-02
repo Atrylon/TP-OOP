@@ -10,6 +10,8 @@ interface Post
 {
     public function find(string $uid): PostEntity;
 
+    public function findAll(): array ;
+
     public function create(string $title, string $message, string $createdAt): PostEntity;
 
 }

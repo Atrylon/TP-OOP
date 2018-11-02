@@ -9,7 +9,15 @@
 {% block body %}{% endblock %}
 <h1>Articles</h1>
 <ul>
-    <li>{{ posts.title }}</li>
+    {% if posts is iterable %}
+        {% for post in posts %}
+            <li>
+                {{ post.title }}
+            </li>
+        {% endfor %}
+    {% else %}
+        {{ posts.title }}
+    {% endif %}
 </ul>
 {% block javascripts %}{% endblock %}
 </body>
