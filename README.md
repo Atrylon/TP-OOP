@@ -12,6 +12,7 @@ Pour les pratiques à éviter :
 -> problème potentiel de sécurité
 * L'utilisation de controleur et la non-répartition pas les tâches tout est effectué dans la même classe
 -> plus difficile à débugger en cas de lourd programme et de bug
+* Utilisation des annotations
 
 ## Part 3
 
