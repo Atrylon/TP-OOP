@@ -29,6 +29,6 @@ final class PostSubscriber implements EventSubscriberInterface
     public function onPostCalledEvent(PostCalledEvent $postCalledEvent)
     {
         $post = $postCalledEvent->find();
-        $this->logger->info(sprintf('L\'article %s vient d\etre affiché' ,$post->title()));
+        $this->logger->info(sprintf('L\'article %s - %s vient d\etre affiché' ,$post->title(), $post->message()));
     }
 }

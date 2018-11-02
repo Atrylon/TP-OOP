@@ -48,7 +48,7 @@ final class LoggedPost implements Post
     public function findAll(): array
     {
         if (!isset($this->posts)) {
-            throw new \LogicException('Id does not exist');
+            throw new \LogicException('No post exist');
         }
 
         return $this->posts;
