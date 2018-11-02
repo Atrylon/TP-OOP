@@ -7,10 +7,10 @@ Voir dossier Part1
 Voir dossier Part2
 
 Pour les pratiques à éviter :
-    - Ne pas mettre les classes à l'état "final", leur permettant d'etre modifiées
-    - Utilisation des getters et des setters dans les entités et surtout en public permettant un accès à toutes les 
-informations -> problème potentiel de sécurité
-    - L'utilisation de controleur et la non-répartition pas les tâches tout est effectué dans la même classe
+* Ne pas mettre les classes à l'état "final", leur permettant d'etre modifiées
+* Utilisation des getters et des setters dans les entités et surtout en public permettant un accès à toutes les informations 
+-> problème potentiel de sécurité
+* L'utilisation de controleur et la non-répartition pas les tâches tout est effectué dans la même classe
 -> plus difficile à débugger en cas de lourd programme et de bug
 
 ## Part 3
